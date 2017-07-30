@@ -20,13 +20,13 @@
         <tr v-for="product in products">
           <th scope="row">{{ product.name }}</th>
           <td>{{ product.qtd }}</td>
-          <td>{{ product.qtd * product.price }}</td>
+          <td>R$ {{ product.qtd * product.price }}</td>
           <td>X</td>
         </tr>
 
         <tr>
           <th colspan="2" scope="row">Total</th>
-          <td>{{ total }}</td>
+          <td>R$ {{ total }}</td>
           <td></td>
         </tr>
       </tbody>
