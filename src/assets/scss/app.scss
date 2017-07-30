@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+@import "bootstrap/bootstrap";
+@import "font-awesome/font-awesome";
+
+body {
+    padding-top: 85px;
+	.clear { clear: both; }
+    .mob-show {
+        @media only screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+	
+	.jumbotron {
+		background-color: transparent;
+	}
+
+	.buy-btn {
+		background-color: transparent;
+		border-radius: 3px;
+		border: 1px solid $green;
+		text-transform: uppercase;
+		&:hover {
+			background-color: $green;
+			color: $white;
+		}
+	}
+
+    #navbar {
+        text-align: center;
+        padding-top: 15px;
+
+        .navbar-brand-new {
+            margin: 0 auto;
+            padding: 20px 0;
+            max-width: 200px;
+            width: 100%;
+            font-size: 30px;
+            text-decoration: none;
+
+            @media only screen and (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        .nav {
+            &.navbar-nav {
+                > li {
+                    > a {
+                        padding-top: 5px;
+                        > i.fa {
+                        	font-size: 30px;
+                        }
+                    }
+
+                    &.active {
+                        > a {
+                            background-color: transparent;
+                        }
+                    }
+                }
+
+                &.navbar-right {
+                    max-width: 200px;
+
+                    @media only screen and (max-width: 767px) {
+                        float: none;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+	.box-product {
+		&--item {
+			border-radius: 3px;
+			border: 1px solid $green;
+			margin: 10px auto;
+			padding-top: 15px;
+			padding-bottom: 15px;
+	        @media only screen and (min-width: 768px) {
+	            min-height: 285px;
+	        }
+			&_title {
+				margin: 0 auto 10px auto;
+				font-size: 20px;
+			}
+			&_image {
+				max-width: 149px;
+				max-height: 149px;
+				width: 100%;
+				height: auto;
+			}
+			&_description {
+				font-size: 14px;
+				text-align: left;
+			}
+			&_price {
+				font-size: 16px;
+				font-weight: 600;
+			}
+		}
+		.buy-btn {
+			display: block;
+			margin: 10px auto;
+		}
+	}
+}
