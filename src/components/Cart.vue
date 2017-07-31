@@ -36,10 +36,12 @@
 
 <script>
   import Navbar from './Navbar'
+  import Product from './Product'
 
   export default {
     components: {
-      Navbar
+      Navbar,
+      Product
     },
 
     head: {
@@ -56,7 +58,7 @@
 
     computed: {
       total() {
-        return 0
+        return 1
       }
     }
   }

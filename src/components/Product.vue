@@ -67,9 +67,9 @@
 				]
 			}
 		},
+		props: ['product'],
 		methods: {
-			addToCart(product) {
-
+			addToCart(product) {				
 				console.log('Enviar para o carrinho: ' + product.productName + ' - R$ ' + product.productPrice);
 			}
 		}
